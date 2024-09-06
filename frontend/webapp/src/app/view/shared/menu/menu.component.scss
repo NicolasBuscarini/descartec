@@ -1,0 +1,88 @@
+@import '../../../../colors';
+
+.navbar{
+  padding: 35px;
+}
+
+.custom-titulo{
+  display: flex;
+  justify-content: center;
+  background-color: $cor-titulo-fundo;
+  
+  a {
+    color: black;
+    &:hover {
+      color: $cor-pastel;
+    }
+    &::after{
+      color: $cor-primaria;
+    }
+  }
+
+}
+@media only screen and (max-width: 991px) {
+  .custom-titulo{
+    padding-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .custom-titulo{
+    margin-bottom: 0; 
+    margin-top: 12px;
+  }
+}
+
+.custom-top-bar {
+    background-color: $cor-fundo-topbar;
+    color: black !important;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+
+  
+    a {
+      color: black;
+      font-family: 'ClashDisplay-Medium';
+      &:hover {
+        color: $cor-primaria;
+      }
+      &::after{
+        color: $cor-primaria;
+      }
+    }
+
+    button {
+      background: $cor-primaria;
+      border: 2px black solid;
+      box-shadow: 3px 3px 0px black;
+      font-family: 'ClashDisplay-Bold';
+      color: white;
+      border-radius: 1px;
+      margin-right: 10px;
+      margin-left: 10px;
+
+      &:hover {
+        background-color: $cor-primaria-escura;
+        color: white;
+      }
+    }
+
+    i {
+        color: white;
+    
+        &:hover {
+          color: $cor-primaria;
+        }
+        &::after{
+            color: $cor-primaria;
+        }
+        
+      }
+  }  
+
+.custom-color {
+    color: black !important;
+}
+
+.custom-search {
+    padding-inline: 30px;
+}
